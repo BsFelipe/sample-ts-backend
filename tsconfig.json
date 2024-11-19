@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true, // Enables strict type-checking options
+    "strictNullChecks": true,  // Requires explicit checking of null and undefined
+    "noImplicitAny": true, // Disallows the use of 'any' in parameters without defined types
+    "skipLibCheck": true, // Skips type checking for declaration files (.d.ts)
+    "strictPropertyInitialization": true, // Ensures properties are initialized
+    "noImplicitReturns": true,  // Checks for consistent return statements in functions
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
